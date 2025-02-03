@@ -10,6 +10,11 @@
     "start": "npm run backend",
     "install:violently": "rm -rf node_modules package-lock.json && npm cache clean --force && npm i"
   },
+  
+    "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
+    "outputDirectory": "build",
+  
+
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
@@ -53,4 +58,5 @@
     "node": ">=16.x",
     "npm": ">=8.x"
   }
+  
 }
