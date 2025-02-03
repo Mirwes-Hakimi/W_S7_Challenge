@@ -15,7 +15,7 @@ function App() {
          </NavLink>
         {/* NavLinks here */}
       </nav>
-      {/* Route and Routes here */}
+      {/* Route and Routes are here */}
      <Routes>
        <Route path='/' element={<Home />}/>
        <Route path='/order' element={ <Form />} />
